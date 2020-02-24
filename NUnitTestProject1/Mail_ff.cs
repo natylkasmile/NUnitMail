@@ -1,4 +1,4 @@
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using System;
@@ -12,20 +12,19 @@ namespace NUnitTestProject1
 {
     [TestFixture]
     [AllureNUnit]
-    [AllureSuite("MailTests")]
+    [AllureSuite("MailTests in firefox")]
     [AllureDisplayIgnored]
-    public class MailTest : InitializeService
+    public class Mail_ff : InitializeService
     {
-       // string findMail = "ilya.filinin@nordclan.com";
         string findMail = "natylkasmile@gmail.com";
         [SetUp]
         public void Setup()
         {
-            InitBrowser("chrome");
+            InitBrowser("firefox");
             SetfindMailAdress(findMail);
         }
 
-        [Test(Description = "find letters")]
+        [Test(Description = "find letters in ff")]
         [AllureSeverity(SeverityLevel.critical)]
         [AllureOwner("Nata")]
         public void FindLettersTest()
@@ -36,18 +35,14 @@ namespace NUnitTestProject1
             {
                 Autorize();
             }, "Autorize");
-
             AllureLifecycle.Instance.WrapInStep(() =>
             {
                 FindMails();
-            }, $"FindMails from {findMail}");
-
+            }, "FindMails");
             AllureLifecycle.Instance.WrapInStep(() =>
             {
                 SendMails();
-            }, $"SendMail to {findMail}");
-
-            Assert.Pass();
+            }, "SendMails");
         }
     }
 }

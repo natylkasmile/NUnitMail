@@ -4,6 +4,7 @@ using System.Text;
 using System.Threading;
 using NUnit.Framework;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Remote;
 using NUnit.Allure;
@@ -21,27 +22,37 @@ namespace NUnitTestProject1
         protected string findMailAdress = "";
         protected string countLetters = "";
         protected int countSpamLetters = 0;
-        protected string environment_host = "192.168.88.237";
-        protected string environment_port = "14572";
+        protected string host_chrome = "localhost:14572";
+        protected string host_ff = "localhost:5557";
 
-        public void InitBrowser(bool Selenium_grid = false)
-        {            
-            if (Selenium_grid)
+        public void InitBrowser(string Selenium_grid = "default")
+        {
+            switch (Selenium_grid)
             {
-                //for selenium grid
-                ChromeOptions options = new ChromeOptions();
-                var remoteAddress = new Uri(string.Format("http://{0}:{1}/wd/hub", environment_host, environment_port));
-                driver = new RemoteWebDriver(remoteAddress, options);
+                case "chrome":
+
+                    //for selenium grid
+                    ChromeOptions options = new ChromeOptions();
+                    var remoteAddress = new Uri(string.Format("http://{0}/wd/hub", host_chrome));
+                    driver = new RemoteWebDriver(remoteAddress, options);
+                    break;
+                case "firefox":
+
+                    //for selenium grid
+                    FirefoxOptions FFoptions = new FirefoxOptions();
+                    remoteAddress = new Uri(string.Format("http://{0}/wd/hub", host_ff));
+                    driver = new RemoteWebDriver(remoteAddress, FFoptions);
+                    break;
+                default:
+                    //for chrome
+                    driver = new ChromeDriver(".");
+                    break;
             }
-            else
-                //for chrome
-                driver = new ChromeDriver(".");
-
-
             driver.Manage().Window.Maximize();
             driver.Manage().Timeouts().AsynchronousJavaScript = TimeSpan.FromSeconds(20);
-
+         
         }
+        
 
         public void SetfindMailAdress(string _findMailAdress)
         {
