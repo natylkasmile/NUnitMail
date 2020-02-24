@@ -1,0 +1,80 @@
+{
+  "uuid": "c86ff759-8b7b-4494-a5c8-9041147c8d3e-tr-0-1001",
+  "historyId": "NUnitTestProject1.MailTest.FindLettersTest",
+  "fullName": "NUnitTestProject1.MailTest.FindLettersTest",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-GV8KMII"
+    },
+    {
+      "name": "testClass",
+      "value": "NUnitTestProject1.MailTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "FindLettersTest"
+    },
+    {
+      "name": "package",
+      "value": "NUnitTestProject1.MailTest"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Nata"
+    },
+    {
+      "name": "suite",
+      "value": "MailTests"
+    }
+  ],
+  "links": [],
+  "name": "FindLettersTest",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "",
+    "trace": "   at NUnitTestProject1.MailTest.FindLettersTest() in E:\\NUnitTestProject1\\NUnitTestProject1\\MailTest.cs:line 38\r\n"
+  },
+  "stage": "finished",
+  "description": "find letters\n",
+  "steps": [
+    {
+      "name": "FindLettersTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "",
+        "trace": "   at NUnitTestProject1.MailTest.FindLettersTest() in E:\\NUnitTestProject1\\NUnitTestProject1\\MailTest.cs:line 38\r\n"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "05e7988566d943faa3ef5cd8a446cef5-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1582560016205,
+      "stop": 1582560058342
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1582560016190,
+  "stop": 1582560058365
+}

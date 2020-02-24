@@ -5,6 +5,11 @@ using System.Threading;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Remote;
+using NUnit.Allure;
+using NUnit.Allure.Attributes;
+using NUnit.Allure.Core;
+using Allure.Commons;
 
 namespace NUnitTestProject1
 {
@@ -13,17 +18,29 @@ namespace NUnitTestProject1
         protected IWebDriver driver;
         protected string mailAdress = "natashamailtest@yandex.ru";
         protected string mailPass = "123123!";
-        protected string mailQuestion = "Heroes3";
         protected string findMailAdress = "";
         protected string countLetters = "";
         protected int countSpamLetters = 0;
+        protected string environment_host = "192.168.88.237";
+        protected string environment_port = "14572";
+
+        public void InitBrowser(bool Selenium_grid = false)
+        {            
+            if (Selenium_grid)
+            {
+                //for selenium grid
+                ChromeOptions options = new ChromeOptions();
+                var remoteAddress = new Uri(string.Format("http://{0}:{1}/wd/hub", environment_host, environment_port));
+                driver = new RemoteWebDriver(remoteAddress, options);
+            }
+            else
+                //for chrome
+                driver = new ChromeDriver(".");
 
 
-        public void InitBrowser()
-        {
-            driver = new ChromeDriver(".");
             driver.Manage().Window.Maximize();
             driver.Manage().Timeouts().AsynchronousJavaScript = TimeSpan.FromSeconds(20);
+
         }
 
         public void SetfindMailAdress(string _findMailAdress)
@@ -70,7 +87,6 @@ namespace NUnitTestProject1
         public void SendMails()
         {
             GoToUrl("https://mail.yandex.ru#compose");
-            string outy = report();
             driver.FindElement(By.Name("to")).SendKeys(findMailAdress);
             driver.FindElement(By.CssSelector("#cke_1_contents div")).Click();
             driver.FindElement(By.CssSelector("#cke_1_contents div")).SendKeys(report());
@@ -80,12 +96,7 @@ namespace NUnitTestProject1
         }
         private string report()
         {
-
-            //if (countSpamLetters != 0)
-            //    return ($"От пользователя {findMailAdress} найдено {countLetters}.");
-            //else
                 return ($"От пользователя {findMailAdress} найдено {countLetters}.");
-
         }
 
         [OneTimeTearDown]

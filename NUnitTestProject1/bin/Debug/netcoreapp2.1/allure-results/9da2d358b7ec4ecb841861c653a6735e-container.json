@@ -1,0 +1,46 @@
+{
+  "uuid": "9fd4b7b0-4dcf-465e-9722-b921b90bf6d9-tc-0-1000",
+  "name": "NUnitTestProject1.MailTest.FindLettersTest",
+  "children": [
+    "c86ff759-8b7b-4494-a5c8-9041147c8d3e-tr-0-1001"
+  ],
+  "befores": [
+    {
+      "name": "Setup",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1582560058337,
+      "stop": 1582560058337
+    }
+  ],
+  "afters": [
+    {
+      "name": "TeardownTest",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1582560058338,
+      "stop": 1582560058338
+    }
+  ],
+  "links": [],
+  "start": 1582560016171,
+  "stop": 1582560058397
+}

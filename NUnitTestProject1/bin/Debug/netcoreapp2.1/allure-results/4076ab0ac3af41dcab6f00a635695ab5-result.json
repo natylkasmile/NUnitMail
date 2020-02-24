@@ -1,0 +1,126 @@
+{
+  "uuid": "7be172dd-e5f2-45ff-89f0-4d2a3148295b-tr-0-1001",
+  "historyId": "NUnitTestProject1.MailTest.FindLettersTest",
+  "fullName": "NUnitTestProject1.MailTest.FindLettersTest",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-GV8KMII"
+    },
+    {
+      "name": "testClass",
+      "value": "NUnitTestProject1.MailTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "FindLettersTest"
+    },
+    {
+      "name": "package",
+      "value": "NUnitTestProject1.MailTest"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Nata"
+    },
+    {
+      "name": "suite",
+      "value": "MailTests"
+    }
+  ],
+  "links": [],
+  "name": "FindLettersTest",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "",
+    "trace": "   at NUnitTestProject1.MailTest.FindLettersTest() in E:\\NUnitTestProject1\\NUnitTestProject1\\MailTest.cs:line 50\r\n"
+  },
+  "stage": "finished",
+  "description": "find letters\n",
+  "steps": [
+    {
+      "name": "FindLettersTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "",
+        "trace": "   at NUnitTestProject1.MailTest.FindLettersTest() in E:\\NUnitTestProject1\\NUnitTestProject1\\MailTest.cs:line 50\r\n"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Autorize",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1582564521731,
+          "stop": 1582564526496
+        },
+        {
+          "name": "FindMails from natylkasmile@gmail.com",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1582564526496,
+          "stop": 1582564537272
+        },
+        {
+          "name": "SendMail to natylkasmile@gmail.com",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1582564537273,
+          "stop": 1582564546733
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "da86003852b54eca833b2242f14fe181-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1582564503365,
+      "stop": 1582564546789
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1582564503364,
+  "stop": 1582564546799
+}

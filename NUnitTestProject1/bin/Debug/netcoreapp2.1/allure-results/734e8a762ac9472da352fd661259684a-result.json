@@ -1,0 +1,126 @@
+{
+  "uuid": "0d1ef732-1921-49d7-b3b8-7ec38d485e98-tr-0-1001",
+  "historyId": "NUnitTestProject1.MailTest.FindLettersTest",
+  "fullName": "NUnitTestProject1.MailTest.FindLettersTest",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "13"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-GV8KMII"
+    },
+    {
+      "name": "testClass",
+      "value": "NUnitTestProject1.MailTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "FindLettersTest"
+    },
+    {
+      "name": "package",
+      "value": "NUnitTestProject1.MailTest"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Nata"
+    },
+    {
+      "name": "suite",
+      "value": "MailTests"
+    }
+  ],
+  "links": [],
+  "name": "FindLettersTest",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "",
+    "trace": "   at NUnitTestProject1.MailTest.FindLettersTest() in E:\\NUnitTestProject1\\NUnitTestProject1\\MailTest.cs:line 49\r\n"
+  },
+  "stage": "finished",
+  "description": "find letters\n",
+  "steps": [
+    {
+      "name": "FindLettersTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "",
+        "trace": "   at NUnitTestProject1.MailTest.FindLettersTest() in E:\\NUnitTestProject1\\NUnitTestProject1\\MailTest.cs:line 49\r\n"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Autorize",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1582564223901,
+          "stop": 1582564228627
+        },
+        {
+          "name": "FindMails from ilya.filinin@nordclan.com",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1582564228627,
+          "stop": 1582564246992
+        },
+        {
+          "name": "SendMail to ilya.filinin@nordclan.com",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1582564246992,
+          "stop": 1582564329995
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "97fcd55d7d594badb55e986cbbb1e1ed-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1582564204584,
+      "stop": 1582564338858
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1582564204582,
+  "stop": 1582564338869
+}

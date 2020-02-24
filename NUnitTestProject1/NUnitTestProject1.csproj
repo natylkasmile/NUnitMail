@@ -7,10 +7,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="allureConfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="allureConfig.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="nunit" Version="3.10.1" />
+    <PackageReference Include="NUnit.Allure" Version="1.0.6.2" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
+    <PackageReference Include="Selenium.Firefox.WebDriver" Version="0.26.0" />
     <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="80.0.3987.10600" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,5 +31,10 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+
+<PropertyGroup>
+<TargetFramework>netcoreapp2.1</TargetFramework>
+<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+</PropertyGroup>
 
 </Project>

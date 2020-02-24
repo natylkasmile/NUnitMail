@@ -1,0 +1,126 @@
+{
+  "uuid": "7e35ace5-bd3d-4305-a995-90cfd3e254f5-tr-0-1001",
+  "historyId": "NUnitTestProject1.MailTest.FindLettersTest",
+  "fullName": "NUnitTestProject1.MailTest.FindLettersTest",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-GV8KMII"
+    },
+    {
+      "name": "testClass",
+      "value": "NUnitTestProject1.MailTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "FindLettersTest"
+    },
+    {
+      "name": "package",
+      "value": "NUnitTestProject1.MailTest"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Nata"
+    },
+    {
+      "name": "suite",
+      "value": "MailTests"
+    }
+  ],
+  "links": [],
+  "name": "FindLettersTest",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "",
+    "trace": "   at NUnitTestProject1.MailTest.FindLettersTest() in E:\\NUnitTestProject1\\NUnitTestProject1\\MailTest.cs:line 49\r\n"
+  },
+  "stage": "finished",
+  "description": "find letters\n",
+  "steps": [
+    {
+      "name": "FindLettersTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "",
+        "trace": "   at NUnitTestProject1.MailTest.FindLettersTest() in E:\\NUnitTestProject1\\NUnitTestProject1\\MailTest.cs:line 49\r\n"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Autorize",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1582561254221,
+          "stop": 1582561259147
+        },
+        {
+          "name": "FindMails",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1582561259147,
+          "stop": 1582561268510
+        },
+        {
+          "name": "SendMails",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1582561268510,
+          "stop": 1582561277729
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "260f44be4c934047bc0ea671d51be5f5-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1582561235547,
+      "stop": 1582561277849
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1582561235545,
+  "stop": 1582561277859
+}
