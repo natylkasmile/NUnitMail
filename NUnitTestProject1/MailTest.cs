@@ -21,7 +21,7 @@ namespace NUnitTestProject1
         [SetUp]
         public void Setup()
         {
-            InitBrowser("chrome");
+            InitBrowser();
             SetfindMailAdress(findMail);
         }
 
@@ -30,8 +30,6 @@ namespace NUnitTestProject1
         [AllureOwner("Nata")]
         public void FindLettersTest()
         {
-            GoToUrl("https://passport.yandex.ru/auth");
-            Thread.Sleep(2000);
             AllureLifecycle.Instance.WrapInStep(() =>
             {
                 Autorize();
@@ -47,7 +45,6 @@ namespace NUnitTestProject1
                 SendMails();
             }, $"SendMail to {findMail}");
 
-            Assert.Pass();
         }
     }
 }

@@ -29,8 +29,6 @@ namespace NUnitTestProject1
         [AllureOwner("Nata")]
         public void FindLettersTest()
         {
-            GoToUrl("https://passport.yandex.ru/auth");
-            Thread.Sleep(2000);
             AllureLifecycle.Instance.WrapInStep(() =>
             {
                 Autorize();
